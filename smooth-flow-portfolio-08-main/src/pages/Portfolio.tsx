@@ -46,9 +46,9 @@ const Portfolio: React.FC = () => {
             {/* Social Links */}
             <div className="flex justify-center space-x-6">
               {[
-                { name: 'LinkedIn', href: '#' },
-                { name: 'GitHub', href: '#' },
-                { name: 'Twitter', href: '#' },
+                { name: 'LinkedIn', href: 'https://www.linkedin.com/in/dhinesh-pasupathi-/' },
+                { name: 'GitHub', href: 'https://github.com/Dhinesh-03-web' },
+                
               ].map((social) => (
                 <a
                   key={social.name}
