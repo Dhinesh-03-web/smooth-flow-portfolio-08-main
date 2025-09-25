@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "my-portfolio-d"
+  },
+  "targets": {
+    "my-portfolio-d": {
+      "hosting": {
+        "dhinesh-p": [
+          "dhinesh-p"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
