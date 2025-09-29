@@ -27,7 +27,10 @@ const Navbar: React.FC = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Delay so mobile menu can close before scrolling
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
     }
     setIsOpen(false);
   };
@@ -47,8 +50,9 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
-            className="text-xl font-bold text-foreground"
+            className="text-xl font-bold text-foreground cursor-pointer"
             whileHover={{ scale: 1.05 }}
+            onClick={() => scrollToSection('#hero')}
           >
             Dhinesh Pasupathi
           </motion.div>
